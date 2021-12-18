@@ -56,7 +56,7 @@ dev_dependencies:
 flutter:
 
   # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
+  # included with your application, so that you can use the icons ins
   # the material Icons class.
   uses-material-design: true
 
@@ -64,7 +64,8 @@ flutter:
   assets:
     - assets/heart.png
     - assets/couple.png
-    - assets/fem4.png
+    - assets/male1.png
+    - assets/fem.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
