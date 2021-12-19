@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:henshe/homepage.dart';
+import 'package:henshe/first.dart';
 
 void main() {
  runApp(const LoginSignupUI());
@@ -13,7 +13,7 @@ class LoginSignupUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "He N' She",
-      home: LoginSignupScreen(),
+      home: First(),
     );
   }
 }

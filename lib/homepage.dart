@@ -45,13 +45,13 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
           AnimatedPositioned(
             duration: const Duration(milliseconds: 80),
             curve: Curves.bounceInOut,
-            top: isSignupScreen ? 210 : 200,
+            top: isSignupScreen ? 190 : 180,
             child: AnimatedContainer(
               duration: const Duration(milliseconds: 80),
               curve: Curves.bounceInOut,
-              height: isSignupScreen ? 300 : 250,
+              height: isSignupScreen ? 200 : 280,
               padding: const EdgeInsets.all(20),
-              width: MediaQuery.of(context).size.width - 80,
+              width: MediaQuery.of(context).size.width - 50,
               margin: const EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -77,7 +77,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           child: Column(
                             children: [
                               Text(
-                                "Enter the ID",
+                                "Play Online",
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
@@ -104,7 +104,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           child: Column(
                             children: [
                               Text(
-                                "Generate an ID",
+                                "Play Locally",
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.bold,
@@ -140,21 +140,12 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
 
   Container buildSigninSection() {
     return Container(
-      margin: const EdgeInsets.only(top: 50),
+      margin: const EdgeInsets.only(top: 45),
       child: Column(
         children: [
-          buildTextField(Icons.perm_identity, "Enter the auto-generated ID"),
-        ],
-      ),
-    );
-  }
-
-  Container buildSignupSection() {
-    return Container(
-      margin: const EdgeInsets.only(top: 60),
-      child: Column(
-        children: [
-          TextButton(
+          Container(
+            margin: const EdgeInsets.only(bottom: 20),
+child: TextButton(
           style: TextButton.styleFrom(
               textStyle: const TextStyle(fontSize: 14),
             ),
@@ -168,12 +159,19 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                                                           });
               
             } ,
-            child: const Text('Click to generate an ID', style: TextStyle(color: Color(0xFFA7BCC7)),),
+            child: const Text('Click to generate an ID for a room', style: TextStyle(color: Color(0xFFA7BCC7)),),
+          ),
           ),
                 const SizedBox(
                   width: 30,),
-                    ],
-                  ),
+          buildTextField(Icons.perm_identity, "Enter the auto-generated ID"),
+        ],
+      ),
+    );
+  }
+
+  Container buildSignupSection() {
+    return Container(
                 );
   }
   Dialog leadDialog = Dialog(
@@ -183,10 +181,10 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
     color: Colors.transparent,
     child: Column(
       mainAxisAlignment: MainAxisAlignment.end,
-       children: <Widget>[
+       children: const <Widget>[
         Padding(
-         padding: EdgeInsets.all(1),
-          child:  Center(heightFactor: 2.3,
+         padding:  EdgeInsets.all(1),
+          child:   Center(heightFactor: 2.3,
             child: Text(
             'Copied', textAlign: TextAlign.center,
             style:
@@ -219,11 +217,11 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
    return AnimatedPositioned(
       duration: const Duration(milliseconds: 700),
       curve: Curves.bounceInOut,
-      top: isSignupScreen ? 460 : 410,
+      top: isSignupScreen ? 350 : 410,
       right: 0,
       left: 0,
       child: Center(
-        child: !isSignupScreen ? Container(
+        child: Container(
           height: 90,
           width: 90,
           padding: const EdgeInsets.all(15),
@@ -269,7 +267,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                 )
               )
               : const Center(),
-        ): const Center(),
+        )
       ),
     );
   }

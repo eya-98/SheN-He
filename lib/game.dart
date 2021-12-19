@@ -31,6 +31,7 @@ class  StartState extends State<Game> {
                     child: Row(
                     children: [
                         Expanded (
+                          child: InkWell(
                           child: Container(
                           width: 20,
                           height: 550,       
@@ -42,27 +43,31 @@ class  StartState extends State<Game> {
                               child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                                 children: 
-                                  [ 
+                                  [
                                     Image.asset(
                                     "assets/fem.png",width: 300, height: 400, fit: BoxFit.contain,
                                     ),
                                   ]
                                 )
                               ),
+                              onTap: () {
+                                print("Tapped on container"); 
+                              },
+                          )
                           ),
                           Expanded (
+                            child: InkWell(
                           child: Container(
                           width: 20,
                           height: 550,       
                           padding: const EdgeInsets.fromLTRB(0, 60, 0, 0),
                           decoration:  BoxDecoration(
                           borderRadius:  BorderRadius.circular(16.0),
-                          color: const Color(0xFF1f7a7a),
+                          color: const Color(0xFF99e6e6),
                            ),
                               child: Align(
           alignment: Alignment.center,
           child: Column(
-            
                                 children: 
                                   [        
                                     Image.asset(
@@ -72,6 +77,10 @@ class  StartState extends State<Game> {
                                 )
                               ),
                           ),
+                          onTap: () {
+                                print("Tapped on container2"); 
+                              },
+                            )
                           )
         ],
       )
