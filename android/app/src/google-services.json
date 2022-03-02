@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "602325542951",
+    "project_id": "hen-she",
+    "storage_bucket": "hen-she.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602325542951:android:209d52cf301ccfc565c602",
+        "android_client_info": {
+          "package_name": "com.application.henshe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "602325542951-snikkh5di7eb1bif44k0j1700v7l2mrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX28tSGVsbHa1H4L8WcDSBO_CWAROqDg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "602325542951-snikkh5di7eb1bif44k0j1700v7l2mrv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

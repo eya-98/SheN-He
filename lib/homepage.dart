@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
 import 'package:henshe/config/palette.dart';
@@ -176,7 +177,7 @@ child: TextButton(
   }
   Dialog leadDialog = Dialog(
   child: Container(
-    height: 40,
+    height: 50,
     width: 6,
     color: Colors.transparent,
     child: Column(
@@ -240,7 +241,7 @@ child: TextButton(
               ? Container(
                   decoration: BoxDecoration(
                       gradient: LinearGradient( 
-                          colors: [Colors.red[100], Color(0xFFff6666)],
+                          colors: [Colors.red[100], const Color(0xFFff6666)],
                           begin: Alignment.topLeft,
                           end: Alignment.bottomRight),
                       borderRadius: BorderRadius.circular(30),
@@ -255,13 +256,10 @@ child: TextButton(
                     icon: const Icon(Icons.arrow_right, 
                     color: Colors.white, size: 40),
                     onPressed: () {
-            setState(() {
                               Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Game()
-            )
-                              );}
+                    builder: (context) => Game())
                   );
                     }
                 )
