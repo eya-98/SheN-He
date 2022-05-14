@@ -12,6 +12,6 @@ it shows the number of questions both partners have to answer to finally calcula
 - Who’s more likely to start an argument?
 - Who’s more likely to finish an argument?
 # The APP
-<img src="assets/screenshot1.jpg">
-<img src="assets/screenshot2.jpg">
-<img src="assets/screenshot3.jpg">
+<img src="assets/screenshot1.jpg" height="50">
+<img src="assets/screenshot2.jpg" height="50">
+<img src="assets/screenshot3.jpg" width="50">
