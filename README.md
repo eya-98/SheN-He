@@ -1,7 +1,7 @@
 ## henshe
 is a flutter game based on quizz that targets couples.
 # Concept 
-it shows the number of questions both partners have to answer to finally calculate the number of similar answers.
+it shows number of questions both partners have to answer to finally calculate the number of similar answers.
 # Type of questions :
 - Who made the first move?
 - Who’s more romantic?
